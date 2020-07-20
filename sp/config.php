@@ -1026,11 +1026,19 @@ $config = [
         //10 => 'tokenvalidity:Validation',
         10 => [
             'class' => 'tokenvalidity:Validation',
-            'redirectUser' => true,
-            'redirectUrl' => 'http://google.com',
+            'redirectUser' => false,
+            'redirectUrl' => '',
             'dateInterval' => 'PT5M',
         ],
-
+        20 => [
+            'class' => 'equestauth:Auth',
+            'tokenUrl' => 'https://auth.dev.equest.com/oauth/token',
+            'apiUrl' => 'https://admin.dev.equest.com/v3/auth-user-by-email',
+            'clientId' => 'demoapp',
+            'clientSecret' => 'demopass',
+            'username' => 'root',
+            'password' => 'root123',
+        ],
         /*
          * Generate the 'group' attribute populated from other variables, including eduPersonAffiliation.
         60 => [
