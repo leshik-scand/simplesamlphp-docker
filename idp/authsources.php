@@ -19,12 +19,12 @@ $config = array(
         'student:studentpass' => array(
             'uid' => array('test'),
             'eduPersonAffiliation' => array('member', 'student'),
-            'email' => 'root'
+            'email' => 'm4.leshik@gmail.com'
         ),
         'employee:employeepass' => array(
             'uid' => array('employee'),
             'eduPersonAffiliation' => array('member', 'employee'),
-            'email' => 'root'
+            'email' => 'm4.leshik@gmail.com'
         ),
     ),
 );
